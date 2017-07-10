@@ -205,7 +205,6 @@ class CheckoutAddressesStepCore extends AbstractCheckoutStep
         return array(
             'address_form' => $this->addressForm->getProxy(),
             'use_same_address' => $this->use_same_address,
-            'use_same_address' => $this->use_same_address,
             'use_different_address_url' => $this->context->link->getPageLink('order', true, null, array('use_same_address' => 0)),
             'new_address_delivery_url' => $this->context->link->getPageLink('order', true, null, array('newAddress' => 'delivery')),
             'new_address_invoice_url' => $this->context->link->getPageLink('order', true, null, array('newAddress' => 'invoice')),
